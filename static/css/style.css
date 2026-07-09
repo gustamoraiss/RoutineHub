@@ -30,8 +30,8 @@ body a {
 }
 
 .header__logo-icon img {
-    width: 18px;
-    height: 18px;
+    width: 24px;
+    height: 24px;
 }
 
 .header__logo-text {
@@ -62,7 +62,7 @@ body a {
     transition: background-color 0.2s, color 0.2s;
 }
 
-.header__nav-link img {
+.header__nav-link svg {
     width: 16px;
     height: 16px;
 }
