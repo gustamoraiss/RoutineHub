@@ -9,7 +9,29 @@
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
 </head>
 <body>
-    <header></header>
+    <header class="header">
+        <a href="/" class="header__logo">
+            <span class="header__logo-icon">
+                <img src="/RoutineHub/static/images/logo-svg.svg" alt="Estrelas do logo do RoutineHub">
+            </span>
+            <span class="header__logo-text">RoutineHub</span>
+        </a>
+
+        <nav class="header__nav">
+            <a href="/" class="header__nav-link header__nav-link--active">
+                <img src="/RoutineHub/static/images/casa-svg.svg" alt="Logo de uma casa">
+                Hoje
+            </a>
+            <a href="/estatisticas" class="header__nav-link">
+                <img src="/RoutineHub/static/images/stats-svg.svg" alt="Logo de um gráfico de barras">
+                Estatísticas
+            </a>
+        </nav>
+
+        <a href="/rotinas/nova" class="header__cta">
+            + Nova rotina
+        </a>
+    </header>
     <main>{% block content %}{% endblock %}</main>
     <footer></footer>
 </body>
