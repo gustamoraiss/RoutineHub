@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* Cores principais */
+    --color-primary: #3fa796;
+    --color-primary-dark: #2c7a70;
+    --color-bg: #f4f9f8;
+    --color-text: #1f2d2b;
+    --color-text-muted: #555555;
+    --color-card: #ffffff;
+    --color-border: #d5dedd;
+
+    /* Cores de feedback (mensagens flash, validação) */
+    --color-success-bg: #e3f6ec;
+    --color-success-text: #1e7a4c;
+    --color-success-border: #b7e3c9;
+
+    --color-error-bg: #fdeaea;
+    --color-error-text: #b3261e;
+    --color-error-border: #f3c2c0;
+
+    /* Tipografia */
+    --font-base: 'Inter', sans-serif;
+    --font-size-base: 1rem;
+    --font-size-sm: 0.9rem;
+    --font-size-lg: 1.3rem;
+
+    /* Espaçamento e formas */
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+
+    /* Layout */
+    --container-max-width: 900px;
+}
