@@ -1,6 +1,6 @@
 from flask import Flask
 from routes.home import bp as home_bp
-from routes.estatisticas import bp as estatisticas_bp
+from routes.stats import bp as estatisticas_bp
 from routes.nova_rotina import bp as nova_rotina_bp
 
 app = Flask(__name__)
