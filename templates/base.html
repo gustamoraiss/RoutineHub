@@ -4,26 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}RoutineHub{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
-    <link rel="stylesheet" href="{% static 'css/variables.css' %}">
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/variables.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header class="header">
         <a href="/" class="header__logo">
             <span class="header__logo-icon">
-                <img src="/RoutineHub/static/images/logo-svg.svg" alt="Estrelas do logo do RoutineHub">
+                <img src="{{ url_for('static', filename='images/logo-svg.svg') }}" alt="Estrelas do logo do RoutineHub">
             </span>
             <span class="header__logo-text">RoutineHub</span>
         </a>
 
         <nav class="header__nav">
             <a href="/" class="header__nav-link header__nav-link--active">
-                <img src="/RoutineHub/static/images/casa-svg.svg" alt="Logo de uma casa">
+                <img src="{{ url_for('static', filename='images/casa-svg.svg') }}" alt="Logo de uma casa">
                 Hoje
             </a>
             <a href="/estatisticas" class="header__nav-link">
-                <img src="/RoutineHub/static/images/stats-svg.svg" alt="Logo de um gráfico de barras">
+                <img src="{{ url_for('static', filename='images/stats-svg.svg') }}" alt="Logo de um gráfico de barras">
                 Estatísticas
             </a>
         </nav>
