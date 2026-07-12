@@ -16,3 +16,12 @@ CREATE TABLE routines (
     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (usuario_id) REFERENCES users (id)
 );
+
+CREATE TABLE routine_logs (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    routine_id INTEGER NOT NULL,
+    date TEXT NOT NULL,
+    completed INTEGER NOT NULL DEFAULT 0,
+    FOREIGN KEY (routine_id) REFERENCES routines (id),
+    UNIQUE (routine_id, date)
+);
