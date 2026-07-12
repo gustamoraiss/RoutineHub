@@ -10,3 +10,15 @@ def get_db():
 
     return conn
 
+def init_db():
+
+    conn = get_db()
+
+    with open("schema.sql") as f:
+
+        conn.executescript(f.read())
+
+    conn.close()
+
+    print("Banco de dados criado.")
+
