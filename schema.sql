@@ -6,3 +6,13 @@ CREATE TABLE users (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+CREATE TABLE routines (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    usuario_id INTEGER NOT NULL,
+    nome TEXT NOT NULL,
+    descricao TEXT,
+    frequencia TEXT NOT NULL DEFAULT 'diaria' CHECK (frequencia IN ('diaria', 'dias_uteis', 'personalizada')),
+    dias_personalizados TEXT,
+    criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (usuario_id) REFERENCES users (id)
+);
