@@ -1,6 +1,11 @@
 import sqlite3
+import os
 
-DATABASE = "database.db"
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+DATABASE = os.path.join(BASE_DIR, "database.db")
+
+SCHEMA = os.path.join(BASE_DIR, "schema.sql")
 
 def get_db():
 
@@ -14,7 +19,7 @@ def init_db():
 
     conn = get_db()
 
-    with open("schema.sql") as f:
+    with open(SCHEMA) as f:
 
         conn.executescript(f.read())
 
