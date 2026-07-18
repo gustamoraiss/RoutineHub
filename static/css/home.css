@@ -91,7 +91,7 @@
 .stat-card {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     gap: 0.3rem;
     background-color: #ffffff;
     border: 1px solid #e3f6f2;
