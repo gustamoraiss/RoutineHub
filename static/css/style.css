@@ -10,7 +10,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.35rem 10rem;
+    padding: 1.35rem 12rem;
     background: linear-gradient(to right, #e3f6f2, #ffffff);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
