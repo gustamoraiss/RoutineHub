@@ -118,3 +118,116 @@
     font-weight: 700;
     color: var(--color-text);
 }
+
+.routines-list__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.routines-list__title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-text);
+}
+
+.routines-list__count {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.routines-list__items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.routine-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem;
+    background-color: #ffffff;
+    border: 1px solid #e3f6f2;
+    border-radius: var(--radius);
+}
+
+.routine-item--completed {
+    background-color: #f3faf5;
+}
+
+.routine-item__icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.routine-item__icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.routine-item__icon--saude {
+    background-color: #e1f2e8;
+}
+
+.routine-item__icon--mente {
+    background-color: #f3f0fa;
+}
+
+.routine-item__info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.routine-item__name {
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 0.15rem;
+}
+
+.routine-item__meta {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.routine-item__toggle {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: 2px solid #dce7e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.routine-item__toggle img {
+    width: 14px;
+    height: 14px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.routine-item--completed .routine-item__name {
+    text-decoration: line-through;
+    color: var(--color-text-muted);
+}
+
+.routine-item--completed .routine-item__toggle {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.routine-item--completed .routine-item__toggle img {
+    opacity: 1;
+}
