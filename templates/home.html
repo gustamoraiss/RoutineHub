@@ -2,6 +2,10 @@
 
 {% block title %}RoutineHub - Página Inicial{% endblock %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+{% endblock %}
+
 {% block content %}
 <section class="greeting">
     <p class="greeting__date">Domingo, 12 de julho</p>
