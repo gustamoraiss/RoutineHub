@@ -12,7 +12,7 @@
 <section class="progress-card">
     <div class="progress-card__main">
         <h2 class="progress-card__title">
-            <!-- logo -->
+            <img src="{{ url_for('static', filename='images/logo-verde-svg.svg') }}" alt="Logo do RoutineHub" class="progress-card__logo">
             Progresso de hoje
         </h2>
         <p class="progress-card__count">
@@ -27,14 +27,14 @@
     <div class="stats-mini">
         <div class="stat-card">
             <span class="stat-card__label">
-                <!-- setinha-->>
+                <img src="{{ url_for('static', filename='images/seta-svg.svg') }}" alt="">
                 Hoje
             </span>
             <span class="stat-card__value">25%</span>
         </div>
         <div class="stat-card">
             <span class="stat-card__label">
-                <!-- foguinho -->
+                <img src="{{ url_for('static', filename='images/fogo-svg.svg') }}" alt="">
                 Sequência
             </span>
             <span class="stat-card__value">0d</span>
@@ -51,20 +51,20 @@
     <ul class="routines-list__items">
         <li class="routine-item routine-item--completed">
             <span class="routine-item__icon routine-item__icon--saude">
-                <!-- coração-->
+                <img src="{{ url_for('static', filename='images/coracao-svg.svg') }}" alt="Ícone de um coração representando saúde">
             </span>
             <div class="routine-item__info">
                 <p class="routine-item__name">Beber 2L de água</p>
                 <p class="routine-item__meta">Saúde · Mantenha-se hidratado ao longo do dia</p>
             </div>
-            <button class="routine-item__toggle" aria-label="Marcar como concluída">
-                <!-- Checkmark -->
+            <button class="routine-item__toggle" aria-label="Marcar como não concluída">
+                <img src="{{ url_for('static', filename='images/check-svg.svg') }}" alt="">
             </button>
         </li>
 
         <li class="routine-item">
             <span class="routine-item__icon routine-item__icon--mente">
-                <!-- Mente -->
+                <img src="{{ url_for('static', filename='images/cerebro-svg.svg') }}" alt="Ícone de um cérebro representando saúde mental">
             </span>
             <div class="routine-item__info">
                 <p class="routine-item__name">Meditar 10 min</p>
