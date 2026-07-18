@@ -89,6 +89,12 @@ a {
     background-color: #000000;
 }
 
+.container {
+    max-width: var(--container-max-width);
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
 @media (max-width: 767px) {
     .header {
         /* logo à esquerda, botão à direita, nav "removido" visualmente daqui */
