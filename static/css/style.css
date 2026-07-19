@@ -95,10 +95,19 @@ a {
     padding: 0 1.5rem;
 }
 
+@media (max-width: 1023px) {
+    .header {
+        padding: 1.1rem 2rem;
+    }
+}
+
 @media (max-width: 767px) {
     .header {
-        /* logo à esquerda, botão à direita, nav "removido" visualmente daqui */
-        justify-content: space-between;
+        padding: 0.9rem 1rem;
+    }
+
+    .header__cta {
+        white-space: nowrap;
     }
 
     .header__nav {
