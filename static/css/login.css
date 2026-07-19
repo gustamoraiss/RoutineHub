@@ -207,3 +207,28 @@
     color: var(--color-primary-dark);
     font-weight: 600;
 }
+
+@media (max-width: 1023px) {
+    .login-page {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .login-page__branding {
+        flex: none;
+        background-color: transparent;
+        align-items: center;
+        padding: 0 1.5rem 2rem;
+    }
+
+    .login-page__pitch,
+    .login-page__footer {
+        display: none;
+    }
+
+    .login-page__form-side {
+        flex: none;
+        background-color: transparent;
+        padding: 0 1.5rem;
+    }
+}
