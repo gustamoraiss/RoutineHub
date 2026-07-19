@@ -43,6 +43,6 @@
         </a>
     </header>
     {% endblock %}
-    <main class="container">{% block content %}{% endblock %}</main>
+    <main class="{% block main_class %}container{% endblock %}">{% block content %}{% endblock %}</main>
 </body>
 </html>
