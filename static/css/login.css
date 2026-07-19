@@ -1,0 +1,209 @@
+.login-main {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.login-page {
+    display: flex;
+    min-height: 100vh;
+    background:
+        radial-gradient(circle at top left, #d2f3f0 0%, transparent 50%),
+        radial-gradient(circle at bottom right, #d2f3f0 0%, transparent 50%),
+        var(--color-bg);
+}
+
+.login-page__branding {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.login-page__form-side {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.login-page__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.login-page__logo-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page__logo-icon img {
+    width: 18px;
+    height: 18px;
+}
+
+.login-page__logo-text {
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+    color: var(--color-text);
+}
+
+.login-page__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--color-text);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.login-page__title-highlight {
+    color: var(--color-primary);
+}
+
+.login-page__subtitle {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    max-width: 420px;
+    margin-bottom: 1.5rem;
+}
+
+.login-page__tags {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.login-page__tags li {
+    background-color: #ffffff;
+    border: 1px solid #e3f6f2;
+    border-radius: 999px;
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+}
+
+.login-page__footer {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+}
+
+.login-card {
+    width: 100%;
+    max-width: 380px;
+}
+
+.login-card__title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 0.4rem;
+}
+
+.login-card__subtitle {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.form-field label {
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.form-field__input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-field__input-wrapper img {
+    position: absolute;
+    left: 1rem;
+    width: 16px;
+    height: 16px;
+    pointer-events: none;
+}
+
+.form-field__input-wrapper input {
+    width: 100%;
+    padding: 0.75rem 1rem 0.75rem 2.6rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    font-size: var(--font-size-base);
+    background-color: #fafefe;
+}
+
+.form-field__input-wrapper input:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background-color: #ffffff;
+}
+
+.form-field__input-wrapper input::placeholder {
+    color: #a3b3b1;
+}
+
+.login-card__forgot {
+    align-self: flex-end;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-top: -0.4rem;
+}
+
+.auth-form__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.85rem;
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border: none;
+    border-radius: 999px;
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+
+.auth-form__submit:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.auth-form__submit img {
+    width: 16px;
+    height: 16px;
+}
+
+.login-card__switch {
+    text-align: center;
+    margin-top: 1.2rem;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.login-card__switch a {
+    color: var(--color-primary-dark);
+    font-weight: 600;
+}
