@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+
+{% block title %}RoutineHub - Criar conta{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="auth-page">
+    <a href="{{ url_for('home.index') }}" class="auth-page__logo">
+        <span class="auth-page__logo-icon">
+            <img src="{{ url_for('static', filename='images/logo-verde-svg.svg') }}" alt="Logo do RoutineHub">
+        </span>
+        <span class="auth-page__logo-text">RoutineHub</span>
+    </a>
+
+    <div class="auth-card">
+        <h1 class="auth-card__title">Comece sua jornada</h1>
+        <p class="auth-card__subtitle">Crie sua conta gratuita e organize suas rotinas em minutos.</p>
+
+        <form method="post" class="auth-form">
+            <div class="form-field">
+                <label for="username">Nome de usuário</label>
+                <div class="form-field__input-wrapper">
+                    <img src="{{ url_for('static', filename='images/pessoa-svg.svg') }}" alt="">
+                    <input type="text" id="username" name="username" placeholder="Seu nome" required>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Email</label>
+                <div class="form-field__input-wrapper">
+                    <img src="{{ url_for('static', filename='images/mail-svg.svg') }}" alt="">
+                    <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="password">Senha</label>
+                <div class="form-field__input-wrapper">
+                    <img src="{{ url_for('static', filename='images/cadeado-svg.svg') }}" alt="">
+                    <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" required minlength="8">
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="confirm_password">Confirmar senha</label>
+                <div class="form-field__input-wrapper">
+                    <img src="{{ url_for('static', filename='images/cadeado-svg.svg') }}" alt="">
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Repita a senha" required minlength="8">
+                </div>
+            </div>
+
+            <ul class="auth-benefits">
+                <li>
+                    <img src="{{ url_for('static', filename='images/check-verde-svg.svg') }}" alt="">
+                    Grátis para sempre
+                </li>
+                <li>
+                    <img src="{{ url_for('static', filename='images/check-verde-svg.svg') }}" alt="">
+                    Sem cartão de crédito
+                </li>
+            </ul>
+
+            <button type="submit" class="auth-form__submit">
+                Criar conta
+                <img src="{{ url_for('static', filename='images/seta-lateral-svg.svg') }}" alt="">
+            </button>
+        </form>
+    </div>
+
+    <p class="auth-page__footer">
+        Já tem uma conta? <a href="{{ url_for('auth.login') }}">Entrar</a>
+    </p>
+</div>
+{% endblock %}
