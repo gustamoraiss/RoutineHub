@@ -114,7 +114,6 @@ a {
         z-index: 10;
     }
 
-    /* Evita que o conteúdo da página fique escondido atrás da barra fixa */
     body {
         padding-bottom: 70px;
     }
