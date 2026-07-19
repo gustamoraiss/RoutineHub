@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block title %}RoutineHub - Entrar{% endblock %}
+
+{% block header %}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="login-page">
+    <div class="login-page__branding">
+        <a href="{{ url_for('home.index') }}" class="login-page__logo">
+            <span class="login-page__logo-icon">
+                <img src="{{ url_for('static', filename='images/logo-verde-svg.svg') }}" alt="Logo do RoutineHub">
+            </span>
+            <span class="login-page__logo-text">RoutineHub</span>
+        </a>
+
+        <div class="login-page__pitch">
+            <h1 class="login-page__title">
+                Pequenos hábitos.<br>
+                <span class="login-page__title-highlight">Grandes mudanças.</span>
+            </h1>
+            <p class="login-page__subtitle">
+                Um assistente leve para acompanhar suas rotinas diárias e celebrar a consistência — sem pressão, sem burocracia.
+            </p>
+
+            <ul class="login-page__tags">
+                <li>Beber água</li>
+                <li>Meditar</li>
+                <li>Ler 20 min</li>
+            </ul>
+        </div>
+
+        <p class="login-page__footer">© 2026 RoutineHub</p>
+    </div>
+
+    <div class="login-page__form-side">
+        <div class="login-card">
+            <h2 class="login-card__title">Bem-vindo de volta</h2>
+            <p class="login-card__subtitle">Entre para continuar cuidando dos seus hábitos.</p>
+
+            <form method="post" class="auth-form">
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <div class="form-field__input-wrapper">
+                        <img src="{{ url_for('static', filename='images/mail-svg.svg') }}" alt="">
+                        <input type="email" id="email" name="email" placeholder="voce@email.com" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="password">Senha</label>
+                    <div class="form-field__input-wrapper">
+                        <img src="{{ url_for('static', filename='images/cadeado-svg.svg') }}" alt="">
+                        <input type="password" id="password" name="password" placeholder="Sua senha" required>
+                    </div>
+                </div>
+
+                <a href="#" class="login-card__forgot">Esqueceu a senha?</a>
+
+                <button type="submit" class="auth-form__submit">
+                    Entrar
+                    <img src="{{ url_for('static', filename='images/seta-lateral-svg.svg') }}" alt="">
+                </button>
+            </form>
+
+            <p class="login-card__switch">
+                Novo por aqui? <a href="{{ url_for('auth.register') }}">Criar conta</a>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
